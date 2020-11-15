@@ -1,7 +1,12 @@
-import logo from './logo.svg';
+import logo from '../logo.svg';
 import './App.css';
+import {useState, useEffect} from 'react';
+import {usePosition} from '../hooks/usePosition/usePosition';
 
 function App() {
+  const {latitude, longitude, error} = usePosition();
+
+  console.log(latitude, longitude, error);
   return (
     <div className="App">
       <header className="App-header">
