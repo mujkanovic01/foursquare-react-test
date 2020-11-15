@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/foursquare-code-test/static/css/main.75e361bb.chunk.css",
+    "main.js": "/foursquare-code-test/static/js/main.32509888.chunk.js",
+    "main.js.map": "/foursquare-code-test/static/js/main.32509888.chunk.js.map",
+    "runtime-main.js": "/foursquare-code-test/static/js/runtime-main.cccf413d.js",
+    "runtime-main.js.map": "/foursquare-code-test/static/js/runtime-main.cccf413d.js.map",
+    "static/js/2.daaef35d.chunk.js": "/foursquare-code-test/static/js/2.daaef35d.chunk.js",
+    "static/js/2.daaef35d.chunk.js.map": "/foursquare-code-test/static/js/2.daaef35d.chunk.js.map",
+    "index.html": "/foursquare-code-test/index.html",
+    "static/css/main.75e361bb.chunk.css.map": "/foursquare-code-test/static/css/main.75e361bb.chunk.css.map",
+    "static/js/2.daaef35d.chunk.js.LICENSE.txt": "/foursquare-code-test/static/js/2.daaef35d.chunk.js.LICENSE.txt",
+    "static/media/logo.2d27ead7.svg": "/foursquare-code-test/static/media/logo.2d27ead7.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cccf413d.js",
+    "static/js/2.daaef35d.chunk.js",
+    "static/css/main.75e361bb.chunk.css",
+    "static/js/main.32509888.chunk.js"
+  ]
+}
