@@ -30,3 +30,11 @@
         font-size: calc(10px + 1vmin);
     }
 }
+
+
+@media only screen and (min-height: 1500px) {
+    .card {
+        height: 40vh;
+        font-size: calc(10px + 1vmin);
+    }
+}
