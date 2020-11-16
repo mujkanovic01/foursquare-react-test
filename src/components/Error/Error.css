@@ -1,0 +1,30 @@
+.error {
+    min-width: 30vw;
+    min-height: 0px;
+    background-color: #c6d8ff;
+    height: auto;
+    border: none;
+    text-align: center;
+    margin: 30px;
+    font-size: calc(8px + 1vmin);
+}
+
+.error-title {
+    font-size: calc(1rem + 0.5vmin);
+}
+
+@media screen and (orientation:portrait) {
+    .error {
+        max-height: 30vh;
+        font-size: calc(12px + 1vmin);
+    }
+    .error-title {
+        font-size: calc(1rem + 1vmin);
+    }
+}
+
+@media screen and (orientation:landscape) {
+    .error { 
+        max-width: 30vh;
+    }
+}

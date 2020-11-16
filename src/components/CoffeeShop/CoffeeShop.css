@@ -1,8 +1,9 @@
 .card {
     min-width: 200px;
-    height: 400px;
-    border: 5px;
-    border-color: black;
+    background-color: #c6d8ff;
+    min-height: 400px;
+    height: auto;
+    border: none;
     text-align: left;
     margin: 30px;
     font-size: calc(8px + 1vmin);
@@ -12,29 +13,8 @@
     font-size: calc(1rem + 0.5vmin);
 }
 
-.card-img-top {
-    height: 50%; 
-    width: 100%
-}
-
-.grey-text {
+.secondary-text {
     color:grey;
     font-size: calc(8px + 0.5vmin);
     margin:0;
-}
-
-
-@media only screen and (max-width: 700px) {
-    .card {
-        height: 400px;
-        font-size: calc(10px + 1vmin);
-    }
-}
-
-
-@media only screen and (min-height: 1500px) {
-    .card {
-        height: 40vh;
-        font-size: calc(10px + 1vmin);
-    }
 }

@@ -1,5 +1,18 @@
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
 .App {
-  background-color: #282c34;
+  background-color: #011627;
   text-align: center;
   padding: 20px;
   min-height: 100vh;
@@ -7,7 +20,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #011627;
   min-height: 10vh;
   display: flex;
   flex-direction: row;
@@ -17,8 +30,15 @@
 }
 
 .App-body {
-  background-color: #282c34;
+  background-color: #011627;
   min-height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.errorWrapper {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   justify-items: center;
@@ -37,13 +57,13 @@
   }
 }
 
-@media only screen and (min-width: 1450px) {
+@media only screen and (min-width: 1500px) {
   .App-body {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-@media only screen and (min-width: 1700px) {
+@media only screen and (min-width: 2300px) {
   .App-body {
     grid-template-columns: repeat(5, 1fr);
   }
