@@ -5,6 +5,7 @@ import CoffeeShop from '../CoffeeShop/CoffeeShop';
 import Radio from '@material-ui/core/Radio';
 import React from 'react';
 import { usePosition } from '../../hooks/usePosition/usePosition';
+import * as _ from 'underscore'
 
 function App() {
   const [position, setPosition] = useState();
@@ -106,14 +107,13 @@ function App() {
   }, [data])
 
   useEffect(() => {
-    if(!coffeeShopDetails) return;
-
-    //setStartRender("true");
-  }, [coffeeShopDetails])
+    if(!selectedValue || !coffeeShopDetails) return;
+    let sorted = sort(coffeeShopDetails, selectedValue);
+    setDetails(sorted);
+  }, [selectedValue])
 
   const handleChange = (event) => {
     setSelectedValue(event.target.value);
-    console.log(event.target.value)
   };
 
   return (
@@ -139,7 +139,13 @@ function App() {
       {(!coffeeShopDetails) ? (<p>loading</p>) : (
         <div className="App-body">
           {Object.keys(coffeeShopDetails).map(index => {
-            return <CoffeeShop key={index} name={coffeeShopDetails[index].name} distance={coffeeShopDetails[index].distance}></CoffeeShop>
+            return (
+              <CoffeeShop 
+                key={index} 
+                name={coffeeShopDetails[index].name} 
+                distance={coffeeShopDetails[index].distance}>
+              </CoffeeShop>
+            )
           })}
         </div>
       )}
@@ -148,3 +154,9 @@ function App() {
 }
 
 export default App;
+
+function sort(arr, value) {
+  var sortedObj = _.sortBy( arr, value );
+
+  return sortedObj
+}
