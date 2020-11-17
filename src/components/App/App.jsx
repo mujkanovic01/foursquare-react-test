@@ -13,7 +13,7 @@ function App() {
   const [position, setPosition] = useState();
   const [data, setData] = useState();
   const [coffeeShopDetails, setDetails] = useState();
-  const [selectedValue, setSelectedValue] = React.useState('distance');
+  const [selectedValue, setSelectedValue] = React.useState('');
 
   // Get user geolocation on component mount
   useEffect(() => {
@@ -102,7 +102,7 @@ function App() {
     });
 
     setDetails(coffeeShops);
-    setSelectedValue('distance');
+    setSelectedValue("distance");
   }, [data])
 
   useEffect(() => {

@@ -15,7 +15,6 @@
 
 @media screen and (orientation:portrait) {
     .error {
-        max-height: 30vh;
         font-size: calc(12px + 1vmin);
     }
     .error-title {
